@@ -6,12 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!--Javascript-->
+    <script src="assets/js/gamemanager.js"></script>
+    <script src="assets/js/player.js"></script>
+    <script src="assets/js/enemy.js"></script>
   </head>
 
+  <div class="header"></div>
   <h1>RPG game</h1>
 
-  <div class="warrior">
-    <a href="#" class="" onclick="">
+  <div class="interface">
+    <a href="#" class="" onclick="GameManager.setGameStart('Warrior')">
       <img src="assets/image/warrior.jpeg" alt="warrior" />
       <div>
         <h2>Warrios</h2>
@@ -21,9 +27,7 @@
         </p>
       </div>
     </a>
-  </div>
-  <div class="hunter">
-    <a href="#" class="" onclick="">
+    <a href="#" class="" onclick="GameManager.setGameStart('Hunter')">
       <img src="assets/image/hunter.jpeg" alt="hunter" />
       <div>
         <h2>Hunter</h2>
@@ -33,9 +37,7 @@
         </p>
       </div>
     </a>
-  </div>
-  <div class="mage">
-    <a href="#" class="" onclick="">
+    <a href="#" class="" onclick="GameManager.setGameStart('Mage')">
       <img src="assets/image/mage.jpeg" alt="mage" />
       <div>
         <h2>Mage</h2>
@@ -45,9 +47,7 @@
         </p>
       </div>
     </a>
-  </div>
-  <div class="rogue">
-    <a href="#" class="" onclick="">
+    <a href="#" class="" onclick="GameManager.setGameStart('Rogue')">
       <img src="assets/image/rogue.jpeg" alt="rogue" />
       <div>
         <h2>Rogue</h2>
@@ -59,8 +59,13 @@
     </a>
   </div>
 
+  <div class="actions"></div>
+
+  <div class="arena"></div>
+
+  <div class="enemy"></div>
+
   <body>
     <script src="assets/js/script.js"></script>
-    <script src="assets/js/components/faq.js"></script>
   </body>
 </html>
